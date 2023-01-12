@@ -3,8 +3,7 @@ GIT:= $(shell which git)
 ## Update submodules
 git/submodules-update:
 	$(call assert-set,GIT)
-	$(GIT) submodule foreach --remote 'git fetch | 0'
-	$(GIT) submodule foreach --remote 'git merge origin master | 0'
+	$(GIT) submodule --init --remote
 
 ## Update git aliases
 git/aliases-update:
