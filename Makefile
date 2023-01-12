@@ -39,7 +39,7 @@ endif
 
 # Import Makefiles into current context
 include $(BUILD_HARNESS_PATH)/Makefile.*
-include $(BUILD_HARNESS_PATH)/modules/*/bootstrap.Makefile*
+#include $(BUILD_HARNESS_PATH)/modules/*/bootstrap.Makefile*
 include $(BUILD_HARNESS_PATH)/modules/*/Makefile*
 include $(BUILD_HARNESS_PATH)/templates/Makefile.build-harness
 # Don't fail if there are no build harness extensions
